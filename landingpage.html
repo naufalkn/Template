@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    
+    <title>Landing Page</title>
+</head>
+<body>
+        <nav>
+            <div class="logo">
+                <img src="logo5.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                <li><a href="">Beranda</a></li>
+                <li><a href="">Tenant</a></li>
+                <li><a href="">Rekomendasi</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+<!-- Slider promo -->
+    <div class="slider">
+        <div class="slide">
+            <img src="gambar1.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="gambar2.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="gambar3.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="gambar4.jpg" alt="">
+        </div>
+        <div class="navigation">
+            <a class="prev" onclick="plusSlider(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlider(-1)">&#10095;</a>
+        </div>
+    </div>
+<!--Slider Rekomendasi  -->
+    <section class="product">
+        <div class="border-rekomendasi"">
+            <div class="text-rekomendasi";>
+                Menu Rekomendasi Food Court Kenangan
+            </div>
+        </div> 
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gambar1.jpg" class="product-thumb" alt="">
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gambar2.jpg" class="product-thumb" alt="">
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gambar3.jpg" class="product-thumb" alt="">
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gambar4.jpg" class="product-thumb" alt="">
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gambar5.jpg" class="product-thumb" alt="">
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/card6.jpg" class="product-thumb" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Kenangan -->
+    <div class="banner">
+        <div class="banner-image">
+            <img src="banner kenangan.png" alt="">
+        </div>
+    </div>
+
+    <!-- Category -->
+
+    
+        <!-- Food category -->
+        
+        <!-- Drink Category -->
+
+    
+    
+    <script>
+        var slideIndex = 1;
+        showSlider(slideIndex);
+
+        function plusSlider(n) {
+            showSlider(slideIndex += n);
+        }
+
+        function showSlider(n) {
+            var i;
+            var slider = document.getElementsByClassName("slide");
+            if (n > slider.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slider.length;
+            }
+            for (i = 0; i < slider.length; i++) {
+                slider[i].style.display = "none";
+            }
+            slider[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</body>
+</html>
